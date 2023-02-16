@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 import '../data/theme/app_colors.dart';
 import '../data/theme/styles.dart';
@@ -64,9 +63,7 @@ class TopGridList extends StatelessWidget {
                  width: 1.6,
                  strokeAlign: BorderSide.strokeAlignOutside),
            ),
-           child: index == 0
-               ? Image.asset(data ?? "", width: (width ?? 0).w, height: (height ?? 0).h)
-               : SvgPicture.asset(data ?? "", width: (width ?? 0).w, height: (height ?? 0).h),
+           child: Image.asset(data ?? "", width: (width ?? 0).w, height: (height ?? 0).h)
          ),
          SizedBox(
            height: 15.h,

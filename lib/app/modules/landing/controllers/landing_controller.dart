@@ -26,12 +26,19 @@ class LandingController extends GetxController {
     _currentIndex.value = index;
   }
 
-  List<String> imageList = [Images.safety_training,Images.h2,Images.online_consultation,Images.health_turism];
+  List<String> imageList = [Images.safety_training,Images.health_care,Images.online_consultation,Images.health_turism];
   List<String> nameList = ["Safety Training","Health Care","Online Consultation","Health Tourism"];
   List<double> imageWidth = [102,127,154,176];
   List<double> imageHeight = [93.48,96.2,93,96];
-  List<String> leftImageList = [Images.ambulance,Images.patient,Images.pragnancy_care,Images.lab_test,Images.doctor_consultation,Images.medical_astrology,Images.operative_care];
-  List<String> rightImageList = [Images.doctor_pana,Images.bro,Images.baby_birth,Images.blood_test,Images.doctor_network,Images.med_astro,Images.op_care];
+  List<String> leftImageList = [Images.ambulance,Images.elderly,Images.prg_care,Images.lab_test,Images.doctor_consultation,Images.med_astro,Images.op_care];
+  static const doctor_pana = "assets/images/doctor_pana.png";
+  static const bro = "assets/images/bro.png";
+  static const rafiki = "assets/images/rafiki.png";
+  static const blood_test = "assets/images/blood_test.png";
+  static const doc_world = "assets/images/doc_world.png";
+  static const med_astro_right = "assets/images/med_astro.png";
+  static const opc = "assets/images/opc.png";
+  List<String> rightImageList = [Images.doctor_pana,Images.bro,Images.rafiki,Images.blood_test,Images.doc_world,Images.med_astro_right,Images.opc];
   List<double> leftImageHeightList = [100.12,100,80,80,97.21,80,80];
   List<double> leftImageWidthList = [106.41,100.35,103.19,88.63,86.15,72.56,83.39];
   List<double> rightImageHeightList = [68.22,100,80,80,80,80,80];

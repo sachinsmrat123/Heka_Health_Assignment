@@ -132,17 +132,12 @@ class LandingView extends GetView<LandingController> {
         children: [
           Padding(
               padding: EdgeInsets.only(left: 8.0.w),
-              child: ambulanceTest == 2
-                  ? Image.asset(
+              child: Image.asset(
                       leftImage ?? "",
                       height: leftImageHeight.h,
                       width: leftImageWidth.w,
                     )
-                  : SvgPicture.asset(
-                      leftImage ?? "",
-                      height: leftImageHeight.h,
-                      width: leftImageWidth.w,
-                    )),
+                 ),
           Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -183,7 +178,7 @@ class LandingView extends GetView<LandingController> {
           ),
           Padding(
             padding: EdgeInsets.only(right: 8.0.w),
-            child: SvgPicture.asset(
+            child: Image.asset(
               rightImage ?? "",
               height: rightImageHeight.h,
               width: rightImageWidth.w,
@@ -254,9 +249,7 @@ class LandingView extends GetView<LandingController> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        ensuringTest == 2
-            ? Image.asset(data ?? "", height: 80.29.h, width: 80.29.w)
-            : SvgPicture.asset(data ?? "", height: 80.29.h, width: 80.29.w),
+         Image.asset(data ?? "", height: 80.29.h, width: 80.29.w),
         SizedBox(
           height: 9.4.h,
         ),
