@@ -18,6 +18,7 @@ dependencies:
 
   flutter_lints: ^2.0.0
   get: ^4.6.5
+  get_cli: ^1.8.1
   flutter_svg: ^2.0.1
   flutter_screenutil: ^5.6.1
   google_fonts: ^4.0.3
@@ -43,6 +44,10 @@ flutter:
       fonts:
         - asset: assets/fonts/arial-cufonfonts/ARIALBD 1.TTF
           weight: 700
+        - asset: assets/fonts/arial-cufonfonts/ARIAL.TTF
+          weight: 400
+        - asset: assets/fonts/arial-cufonfonts/ARIALBD.TTF
+          weight: 600
     - family: gotham
       fonts:
         - asset: assets/fonts/gotham_font/GothamBold.ttf

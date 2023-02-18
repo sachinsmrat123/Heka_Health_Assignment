@@ -67,5 +67,16 @@ class Images{
   static const med_astro_right = "assets/images/med_astro.png";
   static const opc = "assets/images/opc.png";
 
+  static const basic_life_support = "assets/images/basic_life_support.png";
+  static const first_aid = "assets/images/first_aid.png";
+  static const road_safety = "assets/images/road_safety.png";
+  static const electrical_safety = "assets/images/electrical_safety.png";
+  static const safety_image = "assets/images/safety_image.png";
+
+  static const healthCare = "assets/images/healthcare.png";
+  static const regulation = "assets/images/regulation.png";
+  static const helmet = "assets/images/helmet.png";
+  static const warning = "assets/images/warning.png";
+
 
 }

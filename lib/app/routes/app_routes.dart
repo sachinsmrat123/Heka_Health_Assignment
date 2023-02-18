@@ -2,6 +2,5 @@
 
 abstract class Routes {
   static const LANDING = '/landing';
+  static const SAFETY_TRAINING = '/safety-training';
 }
-
-

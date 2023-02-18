@@ -6,8 +6,11 @@ import '../data/values/strings.dart';
 
 class AppBarWidget extends StatelessWidget {
   const AppBarWidget(
-      {Key? key})
+      {Key? key,})
+
+
       : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {

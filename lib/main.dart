@@ -11,7 +11,10 @@ import 'package:heka_health_assignment/app/routes/app_routes.dart';
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
   // SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: [SystemUiOverlay.bottom]);
-  runApp(const MyApp());
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp])
+      .then((_) {
+    runApp(new MyApp());
+  });
 }
 
 class MyApp extends StatelessWidget {
@@ -24,6 +27,7 @@ class MyApp extends StatelessWidget {
             designSize: const Size(428,926),
     builder: (context,child){
     return GetMaterialApp(
+            navigatorKey: GlobalKey<NavigatorState>(),
             title: 'Flutter Demo',
             getPages: AppPages.pages,
             theme: AppTheme.theme,

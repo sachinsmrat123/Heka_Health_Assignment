@@ -116,4 +116,6 @@ class AppColors {
   static const darkTiltColor = Color(0xFF2A5653);
   static const lightGoldColor = Color(0xFFCCB869);
   static const borderColor = Color(0xFF477C79);
+  static const goldLite = Color(0xFFAFA16A);
+  static const gold125 = Color(0xFFDDD5B7);
  }

@@ -30,7 +30,7 @@ class LandingView extends GetView<LandingController> {
         mainAxisSize: MainAxisSize.min,
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
-          const AppBarWidget(),
+           AppBarWidget(),
           Expanded(
             child: SingleChildScrollView(
                 physics: const AlwaysScrollableScrollPhysics(),
@@ -45,6 +45,7 @@ class LandingView extends GetView<LandingController> {
                       textData: controller.nameList,
                       height: controller.imageHeight,
                       width: controller.imageWidth,
+                      pointer: 1,
                     ),
                     //topList(),
                     SizedBox(
@@ -60,7 +61,9 @@ class LandingView extends GetView<LandingController> {
                         children: _buildPageIndicator(),
                       ),
                     ),
+                    SizedBox(height: 30.h,),
                     focusTextWidget(),
+
                     focusList(),
                     const SizedBox(height: 29),
                     stackView(),
@@ -213,7 +216,9 @@ class LandingView extends GetView<LandingController> {
               fontFamily: "gotham",
               fontWeight: FontWeight.w700,
               fontSize: 15.sp,
-              height: 1.3.sp),
+              height: 1.5.sp,
+              color: AppColors.black
+          ),
         ),
       ),
     );
